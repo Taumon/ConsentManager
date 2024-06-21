@@ -1,0 +1,29 @@
+{
+    "name": "taumon/consent-manager",
+    "description": "Laravel Consent Manger DSGVO",
+    "authors": [
+      {
+        "name": "Taumon",
+        "email": "peter@family-knerr.de"
+      }
+    ],
+    "require": {
+      "php": "^7.4|^8.0",
+      "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "VendorName\\MyPackage\\": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "taumon\\consent-manager\\ConsentManagerProvider"
+        ],
+        "aliases": {
+          "MyPackage": "taumon\\consent-manager\\Facades\\ConsentManager"
+        }
+      }
+    }
+  }
